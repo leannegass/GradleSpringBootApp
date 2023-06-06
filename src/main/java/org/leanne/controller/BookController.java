@@ -56,8 +56,18 @@ public class BookController {
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+    @PutMapping("/books/{id}")
+    public ResponseEntity<BookModel> updateBook(@PathVariable("id") long id, @RequestBody BookModel book){
+        Optional<BookModel> bookData = bookRepository.findById(id);
+        if(bookData.isPresent()){
+            BookModel _book = bookData.get();
+            _book.setTitle(book.getTitle());
+            return new ResponseEntity<>(bookRepository.save(_book), HttpStatus.OK);
+        } else{
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
-
+        }
     }
 }
 
