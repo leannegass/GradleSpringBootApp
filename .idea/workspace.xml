@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08703a87-eed8-4c66-8c57-7a28d57c7e6d" name="Changes" comment="&quot;innitial commit&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leanne/Security/AppBasicAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leanne/Security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/leanne/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/leanne/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,13 +54,13 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.GradleSpringBootApp">
-    <configuration name="GradleSpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.org.leanne.GradleSpringBootApp">
+    <configuration name="org.leanne.GradleSpringBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.leanne.GradleSpringBootApp" />
       <module name="GradleSpringBootApp.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.leanne.*" />
+          <option name="PATTERN" value="org.leanne.Security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,7 +114,7 @@
       <list>
         <item itemvalue="Gradle.GradleSpringBootApp [test]" />
         <item itemvalue="Gradle.GradleSpringBootApp [dependencies]" />
-        <item itemvalue="Application.GradleSpringBootApp" />
+        <item itemvalue="Application.org.leanne.GradleSpringBootApp" />
       </list>
     </recent_temporary>
   </component>

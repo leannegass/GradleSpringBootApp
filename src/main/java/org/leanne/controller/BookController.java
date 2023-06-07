@@ -10,11 +10,13 @@ import org.leanne.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api")
+@EnableWebSecurity
 public class BookController {
 
     @Autowired
@@ -50,7 +52,8 @@ public class BookController {
     @PostMapping("/books")
     public ResponseEntity<BookModel> createBook(@RequestBody BookModel book) {
         try {
-            BookModel _book = bookRepository
+            BookModel _book;
+            _book = bookRepository
                     .save(new BookModel(book.getTitle()));
             return new ResponseEntity<>(_book, HttpStatus.CREATED);
         } catch (Exception e) {
